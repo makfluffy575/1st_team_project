@@ -1,0 +1,5 @@
+@use "../abstracts/mixin";
+
+.main {
+    @include mixin.flex-col;
+}

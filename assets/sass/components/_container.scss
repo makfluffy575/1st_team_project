@@ -1,0 +1,89 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+.container {
+    @include mixin.flex-col;
+
+    .container__button {
+        width: 14.7rem;
+        height: 3.8rem;
+        font-family: "George Rounded";
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: variables.$bg-darkgreen;
+    }
+    .container__button:hover {
+        background-color: rgb(55, 127, 121);
+    }
+    .container__button:active {
+        color: variables.$text-color; 
+        background-color: variables.$bg-green; 
+    }
+    //FOR KATE (HEADER)
+    // .container__button_small {
+    // }
+    
+
+    // FOR ANASTASIA (FOOTER - MOB)
+    // .container__button_transparent {
+    // }
+
+// FOR JULIA, NATALI, DIANA, ANASTASIA
+// .container__desc{
+//     color: variables.$text-color;
+//     font-family: "Alegreya Sans";
+//     font-size: variables.$fs-small;
+//     letter-spacing: 0.1%;
+// }
+    .container__title {
+        margin: 0;
+        font-family: "Josefin Sans";
+        font-size: variables.$fs-xlarge;
+    }
+    .container__title-section {
+        margin: 0;
+        color: variables.$text-color;
+        font-family: "Cedarville Cursive";
+        font-size: 28px;
+        text-align: left;
+    }
+    .container__title_h3 {
+        font-size: variables.$fs-medium;
+    }
+    .container__title_rotate-right {
+        text-wrap: nowrap;
+        transform: rotate(-90deg);
+        transform-box: fill-box;
+    }
+    .container__title_rotate-left {
+        text-wrap: nowrap;
+        transform: rotate(-90deg);
+        transform-box: fill-box;
+    }
+    .container__socials {
+        margin-left: 2.8rem;
+        align-self: flex-end;
+        display: grid;
+        grid-template-rows: repeat(3, 2rem) 7.5rem;
+        justify-content: end;
+        align-content: end;
+        gap: 1rem;
+        box-sizing: border-box;
+    }
+    .container__icon-socials {
+        width: 2rem;
+        height: 2rem;
+        fill: variables.$text-color; 
+    }
+    .container__icon-socials:hover{
+        fill: variables.$bg-darkgreen;
+    }
+    .container__icon-socials:active{
+        fill: variables.$bg-green; 
+    }
+    .container__text-socials {
+        margin: 0;
+        color: variables.$text-color;
+    }
+}

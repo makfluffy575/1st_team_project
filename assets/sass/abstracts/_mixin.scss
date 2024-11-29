@@ -1,0 +1,10 @@
+@mixin layout {
+    margin: 0 7.5rem 0 7.5rem;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+

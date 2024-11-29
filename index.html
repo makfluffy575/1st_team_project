@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="root" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,14 +16,56 @@
     <link rel="stylesheet" href="./assets/style/style.map.css" />
     <title>Samwayle</title>
   </head>
-  <body>
+  <body class="container">
     <!-- Beginning KATE -->
     <header class="header"></header>
     <!-- End KATE -->
-    <main class="container">
+    <main class="main">
       <!-- Beginning MARIA -->
       <section class="section-home">
-        <h1 class="title">Hello</h1>
+        <div class="section-home__wrap-1">
+          <p class="container__title-section">
+            Drink coffee, enjoy with Samwyle
+          </p>
+          <h1 class="container__title">Coffee shop</h1>
+          <button class="container__button">Order here</button>
+        </div>
+        <div class="section-home__wrap-2">
+          <button class="section-home__btn">
+            <img src="./assets/icons/right_arrow.svg" alt="right arrow" />
+          </button>
+          <div class="section-home__wrap-img">
+            <div class="section-home__wrap-img_transparent">
+              <img
+                src="./assets/img/coffee_grinder.svg"
+                alt="coffee coffee_grinder"
+                class="section-home__img"
+              />
+            </div>
+          </div>
+          <div class="container__socials">
+            <a href="https://twitter.com/" target="_blank">
+              <svg class="container__icon-socials">
+                <use xlink:href="./assets/icons/socials.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+              <svg class="container__icon-socials">
+                <use xlink:href="./assets/icons/socials.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+              <svg class="container__icon-socials">
+                <use xlink:href="./assets/icons/socials.svg#facebook"></use>
+              </svg>
+            </a>
+            <p
+              class="container__title container__title_h3 container__title_rotate-right container__text-socials"
+            >
+              Follow us
+            </p>
+          </div>
+        </div>
       </section>
       <!-- End MARIA -->
 
