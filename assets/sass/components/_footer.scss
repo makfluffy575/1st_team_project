@@ -1,7 +1,32 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
 .footer {
-
+@include mixin.flex-col 
     /* .footer__contacts */
 
     &__contacts {
+    }
+
+    /* .footer__address */
+
+    &__address {
+    }
+}
+.footer-map {
+}
+.container {
+
+    /* .container__title */
+
+    &__title {
+    }
+}
+    /* .container__desc */
+    &__desc {
+    {
+    color: variables.$text-color;
+    font-family: "Alegreya Sans";
+    font-size: variables.$fs-small;
+    letter-spacing: 0.1%;
     }
 }
