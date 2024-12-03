@@ -1,32 +1,30 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
-.footer {
-@include mixin.flex-col 
-    /* .footer__contacts */
 
-    &__contacts {
-    }
-
-    /* .footer__address */
-
-    &__address {
-    }
-}
 .footer-map {
+}
+.footer {
+@include mixin layout;
+		/* .footer__contacts */
+
+		&__contacts {
+		}
 }
 .container {
 
-    /* .container__title */
+		/* .container__title */
 
-    &__title {
-    }
+		&__title {
+
+			/* .container__title_h3-smaller */
+
+			&_h3-smaller {
+			}
+		}
+
+		/* .container__desc */
+
+		&__desc {
+		}
 }
-    /* .container__desc */
-    &__desc {
-    {
-    color: variables.$text-color;
-    font-family: "Alegreya Sans";
-    font-size: variables.$fs-small;
-    letter-spacing: 0.1%;
-    }
-}
+

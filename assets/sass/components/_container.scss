@@ -51,6 +51,9 @@
     .container__title_h3 {
         font-size: variables.$fs-medium;
     }
+    .container__title_h3-smaller{
+        font-size: 2rem;
+    }
     .container__title_rotate-right {
         text-wrap: nowrap;
         transform: rotate(-90deg);
