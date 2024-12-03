@@ -1,30 +1,36 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
-.footer-map {
-}
 .footer {
-@include mixin layout;
-		/* .footer__contacts */
+// @include mixin.flex-col; 
+@include mixin.layout;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    /* .footer__map */
 
-		&__contacts {
-		}
+    &__map {
+    }
+
+    /* .footer__contacts */
+
+    &__contacts {
+    }
+
+    /* .footer__address */
+
+    &__address {
+    }
 }
 .container {
 
-		/* .container__title */
+    /* .container__title */
 
-		&__title {
+    &__title {
+    }
 
-			/* .container__title_h3-smaller */
+    /* .container__desc */
 
-			&_h3-smaller {
-			}
-		}
-
-		/* .container__desc */
-
-		&__desc {
-		}
+    &__desc {
+    }
 }
-
