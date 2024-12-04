@@ -4,11 +4,21 @@
 .section-promotion {
     @include mixin.layout;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(1fr, 300px));
+        display: flex;
         justify-content: space-between;
         margin-top: 3rem;
+        gap: 10rem;
 
+        .section-promotion_left {
+        
+        }
 
-    }
+        .section-promotion_right {
+            display: flex;
+        }
+
+        }
+        .promotion-img {
+        }
+    
 

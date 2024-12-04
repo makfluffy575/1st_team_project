@@ -7,7 +7,7 @@
     .container__button {
         width: 14.7rem;
         height: 3.8rem;
-        font-family: "George Rounded";
+        font-family: "George Rounded", Georgia, 'Times New Roman', Times, serif;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -29,22 +29,22 @@
     // .container__button_transparent {
     // }
 
-// FOR JULIA, NATALI, DIANA, ANASTASIA
-// .container__desc{
-//     color: variables.$text-color;
-//     font-family: "Alegreya Sans";
-//     font-size: variables.$fs-small;
-//     letter-spacing: 0.1%;
-// }
+    // FOR JULIA, NATALI, DIANA, ANASTASIA
+    .container__desc{
+        color: variables.$text-color;
+        font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: variables.$fs-small;
+        letter-spacing: 0.1%;
+    }
     .container__title {
         margin: 0;
-        font-family: "Josefin Sans";
+        font-family: "Josefin Sans", 'Times New Roman', Times, serif;
         font-size: variables.$fs-xlarge;
     }
     .container__title-section {
         margin: 0;
         color: variables.$text-color;
-        font-family: "Cedarville Cursive";
+        font-family: "Cedarville Cursive", cursive;
         font-size: 28px;
         text-align: left;
     }
