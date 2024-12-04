@@ -4,7 +4,8 @@
 .footer-map {
 }
 .footer {
-@include mixin layout;
+	@include mixin.layout;
+	display: flex;
 		/* .footer__contacts */
 
 		&__contacts {
