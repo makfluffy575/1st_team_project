@@ -1,0 +1,14 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+.section-promotion {
+    @include mixin.layout;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr, 300px));
+        justify-content: space-between;
+        margin-top: 3rem;
+
+
+    }
+
