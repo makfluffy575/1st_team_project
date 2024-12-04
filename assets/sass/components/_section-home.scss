@@ -2,13 +2,13 @@
 @use "../abstracts/variables";
 
 .section-home {
+
     @include mixin.layout;
     margin-right: variables.$fs-medium;
-
+    margin-top: 4rem; /*63px*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: space-between;
-    margin-top: 63px;
 
     .section-home__wrap-1 {
         @include mixin.flex-col;
@@ -22,8 +22,8 @@
         justify-content: flex-end;
     }
     .section-home__btn {
-        width: 9.9rem;
-        height: 9.8rem;
+        width: 9.9rem;/*159px*/
+        height: 9.8rem;/*157px*/
         border: none;
         background: rgb(227, 235, 231);
         opacity: 0.4;
@@ -34,8 +34,8 @@
     }
     .section-home__wrap-img {
         background-color: variables.$bg-green;
-        width: 25.63rem;
-        height: 29.2rem;
+        width: 25.63rem;/*410px*/
+        height: 29.2rem;/*466px*/
         position: relative;
         z-index: 1;
     }
@@ -44,13 +44,19 @@
         height: 79.8%;
         position: absolute;
         z-index: 2;
-        top: 8.75rem;
-        left: 2.1rem;
-        right: 2.1rem;
+        top: 8.75rem;/*140px*/
+        left: 2.1rem;/*33px*/
+        right: 2.1rem;/*33px*/
     }
     .section-home__img{
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+
+    @media screen and (max-width:700px){
+        .section-home__wrap-2 {
+            display: none;
+        }
     }
 }
