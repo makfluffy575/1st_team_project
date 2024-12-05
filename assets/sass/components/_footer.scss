@@ -37,3 +37,29 @@ align-items: center;
     &__desc {
     }
 }
+.container {
+
+    /* .container__button */
+
+    &__button {
+
+        /* .container__button_transparent */
+
+        &_transparent {
+            width: 11.8rem;
+            height: 3.3rem;
+            background: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+
+@media screen and (min-width:300px){
+
+    .container {
+        &__button {
+            &_transparent {
+            }
+        }
+    }
+}
