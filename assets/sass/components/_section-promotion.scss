@@ -1,0 +1,55 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+.section-promotion {
+    @include mixin.layout;
+
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 3rem;
+        gap: 10rem;
+
+        .promo-title {
+            font-family: "Josefin Sans", 'Times New Roman', Times, serif;
+            font-size: variables.$fs-large
+        }
+        .section-promotion_left {
+        
+        }
+
+        .section-promotion_right {
+            display: flex;
+        }
+
+        }
+        .promotion-img_background {
+            background-color: rgb(227, 235, 231);
+            width: 25.63rem;
+            height: 17.3rem;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .promotion-img_cup {
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .promo-img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        
+        .promo-h3 {
+            z-index: 3;
+            position: absolute;
+            right: 4.5rem;
+            font-family: "Cedarville Cursive", cursive;
+
+        }
+
