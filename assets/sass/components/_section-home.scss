@@ -4,10 +4,9 @@
 .section-home {
 
     @include mixin.layout;
-    margin-right: variables.$fs-medium;
     margin-top: 4rem; /*63px*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    display: flex;
+    gap: 7rem;
     justify-content: space-between;
 
     .section-home__wrap-1 {
@@ -27,6 +26,10 @@
         border: none;
         background: rgb(227, 235, 231);
         opacity: 0.4;
+    }
+    .section-home__btn-img {
+        width: 1.6rem;/*25px*/
+        height: 0.4rem;/*6px*/
     }
     .section-home__btn:hover {
         transform: rotate(360deg);
@@ -51,12 +54,18 @@
     .section-home__img{
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
-
-    @media screen and (max-width:700px){
+    @media screen and (max-width:1430px){
+        justify-content: center;
+        .section-home__wrap-1 {
+            align-items: center;
+        }
         .section-home__wrap-2 {
             display: none;
         }
+    }
+    @media screen and (max-width:440px){
+        margin: 4rem 0 0 0;
     }
 }

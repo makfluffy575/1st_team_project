@@ -1,3 +1,19 @@
 .root {
     // font-size: 16px;
+    font-size: 40px;
+    max-width: 3800px;
+    margin: 0 auto;
+    
+    @media screen and (max-width:3600px){
+        font-size: 28px;
+        max-width: 2500px;
+
+    }
+    @media screen and (max-width:2500px){
+        font-size: 16px;
+        max-width: 1700px;
+    }
+    @media screen and (max-width:700px){
+        font-size: 10.6px;
+    }
 }

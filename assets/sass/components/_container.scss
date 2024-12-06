@@ -58,12 +58,7 @@
     .container__title_h3-smaller{
         font-size: 2rem;
     }
-    .container__title_rotate-right {
-        text-wrap: nowrap;
-        transform: rotate(-90deg);
-        transform-box: fill-box;
-    }
-    .container__title_rotate-left {
+    .container__title_rotate {
         text-wrap: nowrap;
         transform: rotate(-90deg);
         transform-box: fill-box;
@@ -89,8 +84,14 @@
     .container__icon-socials:active{
         fill: variables.$bg-green; 
     }
+    .container__wrap-text-socials {
+        position: relative;
+    }
     .container__text-socials {
         margin: 0;
+        position: absolute;
+        left:-2.7rem;
+        top: 2.8rem;
         color: variables.$text-color;
     }
 }
