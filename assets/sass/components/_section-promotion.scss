@@ -3,12 +3,8 @@
 
 .section-promotion {
     @include mixin.layout;
-
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    gap: 10rem;
+    @include mixin.layout-section; 
+    margin-top: 10.5rem;
 
         .promo-title {
             font-family: "Josefin Sans", 'Times New Roman', Times, serif;
@@ -17,7 +13,7 @@
         // .section-promotion_left {
         
         // }
-        .section-promotion_wrap-right {
+        .section-promotion__wrap-right {
             display: flex;
             align-items: center;
         }
