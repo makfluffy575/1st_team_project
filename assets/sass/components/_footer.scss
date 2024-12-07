@@ -9,13 +9,13 @@
 	align-items: center;
 	/* .footer__map */
 
-	&__map {}
+	// &__map {}
 
-	/* .footer__contacts */
+	// /* .footer__contacts */
 
-	&__contacts {}
+	// &__contacts {}
 
-	/* .footer__address */
+	// /* .footer__address */
 
 	&__address {
 		display: flex;
@@ -24,11 +24,11 @@
 	}
 }
 
-.container {
-	&__title {}
+// .container {
+// 	&__title {}
 
-	&__desc {}
-}
+// 	&__desc {}
+// }
 
 .container {
 
@@ -46,11 +46,11 @@
 
 @media screen and (max-width:750px) {
 
-	.container {
-		&__button {
-			&_transparent {}
-		}
-	}
+	// .container {
+	// 	&__button {
+	// 		&_transparent {}
+	// 	}
+	// }
 
 	.footer {
 		flex-direction: column;
