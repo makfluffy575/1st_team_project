@@ -1,6 +1,33 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
-.about-uss {
-    .container_title-section 
+.section-about-us {
+    @include mixin.layout;
+    @include mixin.layout-section; 
+
+    .section-about-us__wrap-left {
+        position: relative;
+    }
+    .section-about-us__title {
+        top: 1.5rem;
+        left: -2.7rem;
+    }
+    .section-about-us__wrap-img {
+        position: relative;
+        width: 23.75rem;/*380px*/
+        height: 17.9rem;/*287px*/
+        background-color: rgb(250, 233, 224);
+    }
+    .section-about-us__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 4.9rem;/*78px*/
+        left: 1.75rem;/*78px*/
+    }
+    .section-about-us__wrap-right {
+        @include mixin.flex-col;
+    }
+
 }

@@ -2,6 +2,13 @@
     margin: 0 7.5rem 0 7.5rem;
 }
 
+@mixin layout-section {
+    margin-top: 6.9rem;/*110px*/
+    padding-right: 5.6rem;/*90px*/
+    display: flex;
+    gap: 6.4rem;/*103px*/
+}
+
 @mixin flex-col {
     display: flex;
     flex-direction: column;

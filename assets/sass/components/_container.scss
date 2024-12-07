@@ -23,22 +23,19 @@
     //FOR KATE (HEADER)
     // .container__button_small {
     // }
-    
-
-    // FOR ANASTASIA (FOOTER - MOB)
     .container__button_transparent {
         width: 11.8rem;
         height: 3.3rem;
         font-family: "Josefin Sans" 'Times New Roman', Times, serif;
         border: solid 1px;
     }
-
-    // FOR JULIA, NATALI, DIANA, ANASTASIA
     .container__desc{
         color: variables.$text-color;
         font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: variables.$fs-small;
         letter-spacing: 0.1%;
+        line-height: 2rem;
+        margin: 1rem 0 1rem 0;
     }
     .container__title {
         margin: 0;
@@ -62,6 +59,8 @@
         text-wrap: nowrap;
         transform: rotate(-90deg);
         transform-box: fill-box;
+        position: absolute;
+        z-index: 2;
     }
     .container__socials {
         margin-left: 2.8rem;
