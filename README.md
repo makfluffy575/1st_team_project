@@ -1,12 +1,12 @@
 <h1 align="center"><img src="https://github.com/makfluffy575/1st_team_project/blob/main/assets/icons/logo.svg" alt="logo" height="40"/> <br/> Coffee shop</h1>
-<h2 align="center">About project</h2>
-<p>This is a website project of NY coffee shop. The development of the site project design is aimed at making it convenient for visitors. The site is also adapted for mobile phones for ease of use.</p>
-<h2 align="center">Structure of project</h2>
-<p>The website includes the following main parts and sections:</p>
+<h2 align="center">About the Project</h2>
+<p>This is a website project for an NY coffee shop. The design and development of the website aim to make it convenient and user-friendly for visitors. The site is also adapted for mobile devices to enhance ease of use.</p>
+<h2 align="center">Structure of the Project</h2>
+<p>The website consists of the following main parts and sections:</p>
 <ul> 
-  <li>header (contains logotype of coffee shop, navigation and contact button);</li>
-  <li>main (contains home section, information about coffee shop, promotion and menu);</li>
-  <li>footer (contains map and addresses of coffee shops in NY).</li>
+  <li>Header: Includes the coffee shop’s logo, navigation menu, and a contact button.</li>
+  <li>Main Section: Features the homepage, information about the coffee shop, promotions, and the menu.</li>
+  <li>Footer: Contains a map and addresses of the coffee shop’s locations in NY.</li>
 </ul>
 <h2 align="center">Languages</h2>
 <ul> 
@@ -19,7 +19,7 @@
   <li><a href="https://github.com/belikovaekaterina">Ekaterina Belikova</a></li>
   <li><a href="https://github.com/DianaManafowa">Diana Manafowa</a></li>
   <li><a href="https://github.com/saitovaan35">Anastasia Saitova</a></li>
-  <li><a href="https://github.com/Julia024">Julia</a></li>
+  <li><a href="https://github.com/Julia024">Julia Horeva</a></li>
   <li><a href="https://github.com/Natali1802">Natali</a></li>
 </ul>
 <h2 align="center">Sources</h2>
