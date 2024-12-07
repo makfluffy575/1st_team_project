@@ -4,6 +4,8 @@
 .container {
     @include mixin.flex-col;
     max-width: none;
+    padding: 0;
+    
 
     .container__button {
         width: 14.7rem;
@@ -21,15 +23,18 @@
         color: variables.$text-color; 
         background-color: variables.$bg-green; 
     }
-    //FOR KATE (HEADER)
-    // .container__button_small {
-    // }
     .container__button_transparent {
         width: 11.8rem;
         height: 3.3rem;
         font-family: "Josefin Sans" 'Times New Roman', Times, serif;
-        border: solid 1px;
+        border: variables.$text-color 1px dashed;
+        color: variables.$text-color;
+        background-color: transparent;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
     }
+    //FOR KATE (HEADER)
+    // .container__button_small {
+    // }
     .container__desc{
         color: variables.$text-color;
         font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -51,10 +56,24 @@
         text-align: left;
     }
     .container__title_h3 {
+        font-size: variables.$fs-large;
+    }
+    .container__title_h3-medium {
         font-size: variables.$fs-medium;
     }
     .container__title_h3-smaller{
         font-size: 2rem;
+        position: relative;
+    }
+    .container__title_h3-smaller::before{
+        content:"our address";
+        color:transparent;
+        border-top:2px solid #000;
+        width: 8rem;
+        position: absolute;
+        z-index: 2;
+        top: 1rem;
+        right: 15rem;
     }
     .container__title_rotate {
         text-wrap: nowrap;
@@ -96,4 +115,9 @@
         color: variables.$text-color;
     }
     
+    @media screen and (max-width:1307px){
+        .container__title_h3-smaller::before{
+            display: none;
+        }
+    }
 }

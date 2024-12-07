@@ -10,9 +10,11 @@
         @include mixin.text-box;     
     }
     .section-promotion__wrap-right {
-            @include mixin.wrap-img;
+        position: relative; 
         }
-
+    .section-promotion__wrap-img {
+        @include mixin.wrap-img;
+    }
     .section-promotion__img {
         @include mixin.img;
         object-fit: contain;
@@ -33,7 +35,24 @@
             align-items: center;
             padding-right: 0;
             gap: 2rem;
-            
+            margin: 6.9rem 1.5rem 0 1.5rem;
+
+            .section-promotion__wrap-right {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: variables.$bg-green;
+            }
+            .section-promotion__wrap-img {
+                width: 14.75rem;/*236px*/
+                height: 20rem;/*320px*/
+                background-color: transparent;
+            }
+            .section-promotion__img {
+                object-fit: cover;
+                top: -1rem;
+                left: auto;
+            }
             .section-promotion__wrap-left{
                 max-width: none;
             }
@@ -43,8 +62,7 @@
             .section-promotion_btn {
                 display: none;
             }
-    }
-        
+    }  
     }
 
 
