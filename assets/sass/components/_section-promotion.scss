@@ -4,62 +4,47 @@
 .section-promotion {
     @include mixin.layout;
     @include mixin.layout-section; 
-    margin-top: 10.5rem;
+    margin-top: 10.5rem;/*168px*/
 
-        .promo-title {
-            font-family: "Josefin Sans", 'Times New Roman', Times, serif;
-            font-size: variables.$fs-large
+    .section-promotion__wrap-left {
+        @include mixin.text-box;     
+    }
+    .section-promotion__wrap-right {
+            @include mixin.wrap-img;
         }
-        // .section-promotion_left {
+
+    .section-promotion__img {
+        @include mixin.img;
+        object-fit: contain;
+        width: 14.75rem;/*236px*/
+        height: 20rem;/*320px*/
+        top: -1.5rem;
+        left: 4.5rem;
+    }
+    .section-promotion__title {
+        top: 1.5rem;
+        left: 19.5rem;
+    }
         
-        // }
-        .section-promotion__wrap-right {
-            display: flex;
-            align-items: center;
-        }
-
-        }
-        .promotion-img_background {
-            background-color: rgb(227, 235, 231);
-            width: 25.63rem;
-            height: 17.3rem;
-            position: relative;
-            z-index: 1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .promotion-img_cup {
-            position: absolute;
-            z-index: 2;
-
-        }
-
-        .promo-img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
-        
-        .promo-h3 {
-            z-index: 3;
-            position: absolute;
-            right: 4.5rem;
-            font-family: "Cedarville Cursive", cursive;
-
-        }
-    @media screen and (max-width: 800px) {
-        .section-promotion {
+    @media screen and (max-width: 1330px) {
             flex-direction: column-reverse;
             flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .promo-h3 {
-            display: none;
-        }
-        .promo_btn {
-            display: none;
-        }
+            align-content: center;
+            align-items: center;
+            padding-right: 0;
+            gap: 2rem;
+            
+            .section-promotion__wrap-left{
+                max-width: none;
+            }
+            .section-promotion__title {
+                display: none;
+            }
+            .section-promotion_btn {
+                display: none;
+            }
+    }
+        
     }
 
 

@@ -36,11 +36,9 @@
         transition: all 0.5s ease-in-out;
     }
     .section-home__wrap-img {
-        background-color: variables.$bg-green;
+        @include mixin.wrap-img;
         width: 25.63rem;/*410px*/
         height: 29.2rem;/*466px*/
-        position: relative;
-        z-index: 1;
     }
     .section-home__wrap-img_transparent {
         width: 84%;
@@ -52,9 +50,7 @@
         right: 2.1rem;/*33px*/
     }
     .section-home__img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        @include mixin.img;
     }
     @media screen and (max-width:1430px){
         justify-content: center;

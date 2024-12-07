@@ -13,21 +13,35 @@
         left: -2.7rem;
     }
     .section-about-us__wrap-img {
-        position: relative;
-        width: 23.75rem;/*380px*/
-        height: 17.9rem;/*287px*/
+        @include mixin.wrap-img;
         background-color: rgb(250, 233, 224);
     }
     .section-about-us__img {
-        width: 100%;
-        height: 100%;
+        @include mixin.img;
         object-fit: contain;
-        position: absolute;
         top: 4.9rem;/*78px*/
-        left: 1.75rem;/*78px*/
+        left: 1.75rem;/*28px*/
     }
     .section-about-us__wrap-right {
         @include mixin.flex-col;
+        @include mixin.text-box;     
     }
 
+    @media screen and (max-width: 1330px) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        padding-right: 0;
+        
+        .section-about-us__wrap-right{
+        max-width: none;
+        }
+        .section-about-us__title {
+            display: none;
+        }
+        .section-promotion_btn {
+            display: none;
+        }
+}
 }
