@@ -1,31 +1,65 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 
-.footer-map {
-}
 .footer {
-	@include mixin.layout;
-	display: flex;
-		/* .footer__contacts */
+// @include mixin.flex-col; 
+@include mixin.layout;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    /* .footer__map */
 
-		&__contacts {
-		}
+    &__map {
+    }
+
+    /* .footer__contacts */
+
+    &__contacts {
+    }
+
+    /* .footer__address */
+
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+.container {
+
+    /* .container__title */
+
+    &__title {
+    }
+
+    /* .container__desc */
+
+    &__desc {
+    }
 }
 .container {
 
-		/* .container__title */
+    /* .container__button */
 
-		&__title {
+    &__button {
 
-			/* .container__title_h3-smaller */
+        /* .container__button_transparent */
 
-			&_h3-smaller {
-			}
-		}
-
-		/* .container__desc */
-
-		&__desc {
-		}
+        &_transparent {
+            width: 11.8rem;
+            height: 3.3rem;
+            background: rgba(255, 255, 255, 1);
+        }
+    }
 }
 
+
+@media screen and (min-width:300px){
+
+    .container {
+        &__button {
+            &_transparent {
+            }
+        }
+    }
+}
