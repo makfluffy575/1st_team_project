@@ -1,0 +1,21 @@
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
+
+.section-menu {
+    background-color: #2D635E;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+// .section-menu__americano {
+// }
+// .section-menu__card-title {
+// }
+// .section-menu__description {
+// }
+// .section-menu__btn {
+// }
+// .section-menu__latte {
+// }
+// .section-menu__espresso {
+// }
