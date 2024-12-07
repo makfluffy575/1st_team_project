@@ -2,4 +2,5 @@
 
 .main {
     @include mixin.flex-col;
+    width: 100%;
 }

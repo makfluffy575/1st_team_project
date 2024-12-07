@@ -2,7 +2,8 @@
 @use "../abstracts/variables";
 
 .section-menu {
-    background-color: #2D635E;
+    background-color: variables.$bg-green;
+    opacity: 0.4;
     border: none;
     display: flex;
     flex-direction: row;

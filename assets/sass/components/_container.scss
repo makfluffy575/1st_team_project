@@ -3,6 +3,7 @@
 
 .container {
     @include mixin.flex-col;
+    max-width: none;
 
     .container__button {
         width: 14.7rem;
