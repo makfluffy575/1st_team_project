@@ -48,7 +48,11 @@
     .header__nav-link_white {
         color: white;
     }
-
+    #header__link-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .header__menu-icon {
         display: none; 
         flex-direction: column;
