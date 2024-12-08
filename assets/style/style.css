@@ -749,11 +749,11 @@ template {
   width: 14.75rem; /*236px*/
   height: 20rem; /*320px*/
   top: -1.5rem;
-  left: 4.5rem;
+  left: 5.5rem;
 }
 .section-promotion .section-promotion__title {
   top: 1.5rem;
-  left: 19.5rem;
+  left: 20.5rem;
 }
 @media screen and (max-width: 1330px) {
   .section-promotion {
