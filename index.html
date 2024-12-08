@@ -8,7 +8,6 @@
       href="./assets/icons/logo-icon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="stylesheet" href="./assets/style/style.map.css" />
     <title>Samwayle</title>
@@ -16,15 +15,13 @@
   <body class="container">
     <!-- Beginning KATE -->
     <header class="header">
+      <div class="header__menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="./assets/icons/logo.svg" alt="Logo" class="header__logo" />
       <div class="header__container">
-        <div class="header__logo">
-          <img
-            src="assets/icons/logo.svg"
-            alt="Logo"
-            class="header__logo-image"
-          />
-        </div>
-
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -33,7 +30,7 @@
               >
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link header__nav-link--bold"
+              <a href="#" class="header__nav-link header__nav-link_bold"
                 >Promotion</a
               >
             </li>
@@ -44,13 +41,10 @@
               <a href="#" class="header__nav-link">Contacts</a>
             </li>
           </ul>
-          <button class="container__button">Contact Us</button>
         </nav>
-        <div class="header__menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <button class="container__button container__button_small">
+          Contact Us
+        </button>
       </div>
     </header>
     <!-- End KATE -->
@@ -181,37 +175,63 @@
       <!-- End JULIA -->
 
       <!-- Beginning DIANA -->
-      <!-- <section class="section-menu">
-        <div class="section-menu__americano">
-          <p class="section-menu__card-title">Americano</p>
-          <p class="section-menu__description">
-            The name Latte (from Italian “milk”) speaks about the main
-            ingredient of the drink. It is recommended to take fat milk - at
-            least 3.2%. In addition to it, milk foam.
-          </p>
-          <button class="section-menu__btn">Order now</button>
-        </div>
+      <section class="section-menu">
+        <button class="section-menu__button">
+          <img
+            src="./assets/icons/arrow-previous.svg"
+            alt="arrow previous"
+            class="section-menu__img-btn"
+          />
+        </button>
+        <div class="section-menu__wrap">
+          <div class="section-menu__item">
+            <div>
+              <h3 class="container__title container__title_h3-medium">
+                Americano
+              </h3>
+              <p class="container__desc">
+                The name Latte (from Italian “milk”) speaks about the main
+                ingredient of the drink. It is recommended to take fat milk - at
+                least 3.2%. In addition to it, milk foam.
+              </p>
+            </div>
+            <button class="container__button">Order now</button>
+          </div>
 
-        <div class="section-menu__latte">
-          <p class="section-menu__card-title">Latte</p>
-          <p class="section-menu__description">
-            The name Latte (from Italian “milk”) speaks about the main
-            ingredient of the drink. It is recommended to take fat milk - at
-            least 3.2%. In addition to it, milk foam.
-          </p>
-          <button class="section-menu__btn">Order now</button>
-        </div>
+          <div class="section-menu__item">
+            <div>
+              <h3 class="container__title container__title_h3-medium">Latte</h3>
+              <p class="container__desc">
+                The name Latte (from Italian “milk”) speaks about the main
+                ingredient of the drink. It is recommended to take fat milk - at
+                least 3.2%. In addition to it, milk foam.
+              </p>
+            </div>
+            <button class="container__button">Order now</button>
+          </div>
 
-        <div class="section-menu__espresso">
-          <p class="section-menu__card-title">Espresso</p>
-          <p class="section-menu__description">
-            Espresso - black coffee made in a coffee machine or a special coffee
-            machine, where hot water is passed through pressed ground beans at a
-            pressure.
-          </p>
-          <button class="section-menu__btn">Order now</button>
+          <div class="section-menu__item">
+            <div>
+              <h3 class="container__title container__title_h3-medium">
+                Espresso
+              </h3>
+              <p class="container__desc">
+                Espresso - black coffee made in a coffee machine or a special
+                coffee machine, where hot water is passed through pressed ground
+                beans at a pressure.
+              </p>
+            </div>
+            <button class="container__button">Order now</button>
+          </div>
         </div>
-      </section> -->
+        <button class="section-menu__button">
+          <img
+            src="./assets/icons/arrow-next.svg"
+            alt="arrow next"
+            class="section-menu__img-btn"
+          />
+        </button>
+      </section>
       <!-- End DIANA -->
     </main>
     <!-- Beginning ANASTASIA -->
@@ -256,6 +276,5 @@
       </section>
     </footer>
     <!-- End ANASTASIA -->
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.bundle.min.js" />
   </body>
 </html>

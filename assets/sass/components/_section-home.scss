@@ -24,8 +24,7 @@
         width: 9.9rem;/*159px*/
         height: 9.8rem;/*157px*/
         border: none;
-        background-color: variables.$bg-green;
-        opacity: 0.4;
+        background-color: variables.$bg-lightgreen;
     }
     .section-home__btn-img {
         width: 1.6rem;/*25px*/
@@ -52,7 +51,7 @@
     .section-home__img{
         @include mixin.img;
     }
-    @media screen and (max-width:1430px){
+    @media screen and (max-width:1330px){
         justify-content: center;
         .section-home__wrap-1 {
             align-items: center;

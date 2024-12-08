@@ -4,6 +4,7 @@
 .footer {
 	@include mixin.layout;
 	margin-top: 8.2rem;/*131px*/
+	padding-bottom: 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

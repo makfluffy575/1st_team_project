@@ -1,148 +1,79 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
+@use "../abstracts/mixin";
+@use "../abstracts/variables";
 .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px 40px;
-    margin-top: 20px;
-    background-color: #fff;
-    box-sizing: border-box; 
-}
-
-.header__container {
+    @include mixin.layout;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
+    margin-top: 3rem;
 
-.header__logo {
-    display: flex;
-    align-items: center;
-    margin-left: 90px;
-}
-
-.header__logo-image {
-    height: 40px;
-}
-
-.header__logo-text {
-    font-size: 32px;
-    font-family: "Cedarville Cursive", cursive;
-    font-weight: 400;
+    .header__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
     }
-
-.header__nav {
-    display: flex;
-    align-items: center;
-    gap: 60px; 
-    margin-right: 30px; 
-}
-
-.header__nav-list {
-    display: flex;
-    gap: 85px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav-link {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300; 
-}
-
-.header__nav-link:not(:last-child) {
-    margin-right: 30px; 
-}
-.header__nav-link:last-child {
-    margin-right: 10px; 
-}
-
-.header__nav-link--bold {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 500; 
-    font-style: normal;
-}
-
-
-.header__nav-item {
-    font-size: 16px;
-}
-
-.header__nav-link {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
-}
-
-
-.container__button {
-    padding: 10px 20px;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300; 
-    background-color: #2D635E;
-    color: white;
-    font-size: 16px;
-    border: none;
-    width: 135px;
-    height: 43px;
-    border-radius: 7px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s;
-    margin-left: 10px;
-    margin-right: 80px; 
-}
-
-.container__button:hover {
-    transform: scale(1.05);
-}
-
-
-.header__menu-icon {
-    display: none; 
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.header__menu-icon span {
-    width: 28px;
-    height: 3px;
-    background-color: black;
-    border-radius: 2px;
-}
-
-
-@media (max-width: 768px) {
-
-    .header {
-        justify-content: center;
+    .header__logo {
+        width: 14.75rem;/*236px*/
+        height: 2.4rem;/*38px*/
+    }
+    .header__nav {
+        margin-right: 5rem;
+    }
+    .header__nav-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        gap: 3.5rem;
+        margin: 0;
+        padding: 0;
+        text-wrap: nowrap;
+    }   
+    .header__nav-link {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400; 
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+    .header__nav-link:hover {
+        font-weight: 700; 
+    }
+    .header__nav-link:active {
+        font-weight: 700; 
+        color:variables.$bg-darkgreen;
+    }
+    .header__nav-link {
     }
 
     .header__menu-icon {
-        display: flex; 
-        position: absolute;
-        left: 0px; 
-        margin-left: 20px;
+        display: none; 
+        flex-direction: column;
+        gap: 0.3rem;
+        cursor: pointer;
+    }
+    .header__menu-icon span {
+        width: 28px;
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
     }
 
-    .header__logo {
-        justify-content: center;
+    @media screen and (max-width: 1330px) {
+        margin: 3rem 1.5rem 0 1.5rem;
+
+        .header__menu-icon {
+            display: flex;
+            margin-right: 2.6rem; 
+        }
+        .header__nav {
+            display: none;
+        }
     }
-
-
-    .header__nav {
-        display: none;
-    }
-
-    .container__button {
-        display: none;
+    @media screen and (max-width: 450px) {
+        .container__button_small {
+                display: none;
+            }
     }
 }

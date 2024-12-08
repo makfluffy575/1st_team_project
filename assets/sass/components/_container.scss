@@ -26,20 +26,28 @@
     .container__button_transparent {
         width: 11.8rem;
         height: 3.3rem;
-        font-family: "Josefin Sans" 'Times New Roman', Times, serif;
+        font-family: "Josefin Sans", 'Times New Roman', Times, serif;
         border: variables.$text-color 1px dashed;
         color: variables.$text-color;
         background-color: transparent;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
     }
-    //FOR KATE (HEADER)
-    // .container__button_small {
-    // }
+    .container__button_transparent:hover{
+        color: white;
+    }
+    .container__button_transparent:active{
+        color: black;
+    }
+    .container__button_small {
+        width: 8.4rem;
+        height: 2.5rem;
+        border-radius: 7px;
+        box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+    }
     .container__desc{
         color: variables.$text-color;
         font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: variables.$fs-small;
-        letter-spacing: 0.1%;
         line-height: 2rem;
         margin: 1rem 0 1rem 0;
     }

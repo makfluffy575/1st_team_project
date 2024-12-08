@@ -2,21 +2,62 @@
 @use "../abstracts/variables";
 
 .section-menu {
-    background-color: variables.$bg-green;
-    opacity: 0.4;
-    border: none;
+    margin-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: variables.$bg-lightgreen;
     display: flex;
-    flex-direction: row;
+    padding: 3rem 7.5rem 3rem 7.5rem;
+
+    .section-menu__wrap {
+        margin: 0 2rem 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+
+    .section-menu__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 0px 23px 34px 0px rgba(35, 57, 55, 0.17);
+        padding: 2.7rem 3.8rem 2.9rem 3.5rem;
+    }
+    .section-menu__item *{
+        text-align: center;
+    }
+
+    .section-menu__button {
+        border: none;
+        background-color: transparent;
+        width: 4vw;
+    }
+    .section-menu__img-btn:hover {
+        width: 30%;
+    }
+    .section-menu__img-btn:active {
+        width: 40%;
+    }
+
+    @media screen and (max-width: 1330px) {
+        background-color: transparent;
+        padding: 3rem 1.5rem 3rem 1.5rem;
+
+        .section-menu__wrap {
+            grid-template-columns: repeat(auto-fit, minmax(39.5rem,1fr));
+            margin: 0;
+        }
+        .section-menu__button {
+            display: none;
+        }
+    }
+    @media screen and (max-width: 470px) {
+        .section-menu__wrap {
+            grid-template-columns: repeat(auto-fit, minmax(20.5rem,1fr));
+        }
+    }
 }
-// .section-menu__americano {
-// }
-// .section-menu__card-title {
-// }
-// .section-menu__description {
-// }
-// .section-menu__btn {
-// }
-// .section-menu__latte {
-// }
-// .section-menu__espresso {
-// }
