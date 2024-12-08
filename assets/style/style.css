@@ -493,6 +493,7 @@ template {
 .header .header__nav-link {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+  font-style: normal;
   text-decoration: none;
   color: black;
   transition: color 0.3s;
@@ -503,6 +504,9 @@ template {
 .header .header__nav-link:active {
   font-weight: 700;
   color: rgb(45, 99, 94);
+}
+.header .header__nav-link_white {
+  color: white;
 }
 .header .header__menu-icon {
   display: none;

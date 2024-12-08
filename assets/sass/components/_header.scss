@@ -32,7 +32,8 @@
     }   
     .header__nav-link {
         font-family: "Josefin Sans", sans-serif;
-        font-weight: 400; 
+        font-weight: 400;
+        font-style: normal; 
         text-decoration: none;
         color: black;
         transition: color 0.3s;
@@ -44,7 +45,8 @@
         font-weight: 700; 
         color:variables.$bg-darkgreen;
     }
-    .header__nav-link {
+    .header__nav-link_white {
+        color: white;
     }
 
     .header__menu-icon {
