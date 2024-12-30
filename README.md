@@ -9,18 +9,18 @@
   <li>Footer: Contains a map and addresses of the coffee shop’s locations in NY.</li>
 </ul>
 <h2 align="center">Languages</h2>
-
-<tr>
-        <th><img src="./assets/icons/readme_icons/sass.svg" alt="icon sass" height="25" /></th>
-        <th><img src="./assets/icons/readme_icons/html.svg" alt="icon html" height="30"/></th>
-        <th><img src="./assets/icons/readme_icons/bem.svg" alt="icon html" height="30"/></th>
-    </tr>
-    <tr>
-        <td>SCSS</td>
-        <td>HTML</td>
-        <td>BEM</td>
-    </tr>
-
+<table>
+  <tr>
+    <th><img src="./assets/icons/readme_icons/sass.svg" alt="icon sass" height="25" /></th>
+    <th><img src="./assets/icons/readme_icons/html.svg" alt="icon html" height="30"/></th>
+    <th><img src="./assets/icons/readme_icons/bem.svg" alt="icon html" height="30"/></th>
+  </tr>
+  <tr>
+    <td>SCSS</td>
+    <td>HTML</td>
+    <td>BEM</td>
+  </tr>
+</table>
 <h2 align="center">Project team</h2>
 <ul> 
   <li>&#9734; Team leader <a href="https://github.com/makfluffy575">Maria Shatskaya</a> (Section "Home", test + AWD)</li>
