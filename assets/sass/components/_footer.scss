@@ -9,17 +9,8 @@
 	justify-content: space-between;
 	align-items: center;
 
-	#footer__btn_address {
-	display:none;
-	}
-	@media screen and (max-width:1307px){
-		margin: 6.9rem 1.5rem 0 1.5rem;
-
-		.footer-address-1, .footer-address-2 {
-		display:none;
-		}
-		#footer__btn_address {
-			display:block;
-		}		
+	
+	@media screen and (max-width: 920px){
+		margin: 6.9rem 1.5rem 0 1.5rem;	
 	}
 }

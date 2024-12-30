@@ -2,62 +2,72 @@
 @use "../abstracts/variables";
 
 .section-about-us {
-    @include mixin.layout;
-    @include mixin.layout-section; 
+  @include mixin.layout;
+  @include mixin.layout-section; 
+
+  .section-about-us__wrap-left {
+    position: relative;
+  }
+  .section-about-us__title {
+    @include mixin.rotate;
+    top: 1.5rem;
+    left: -2.7rem;
+  }
+  .section-about-us__wrap-img {
+    @include mixin.wrap-img;
+    width: 23.75rem;/*380px*/
+    height: 17.9375rem;/*287px*/
+    background-color: variables.$bg-peach;
+    }
+  .section-about-us__img {
+    @include mixin.img;
+    object-fit: contain;
+    width: 22.8125rem;/*365px*/
+    height: 16.4375rem;/*263px*/
+    top: 4.9rem;/*78px*/
+    left: 1.75rem;/*28px*/
+  }
+  .section-about-us__wrap-right {
+    @include mixin.flex-col;
+    @include mixin.text-box;     
+  }
+
+  @media screen and (max-width: 1230px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding-right: 0;
+    gap: 2rem;
 
     .section-about-us__wrap-left {
-        position: relative;
-    }
-    .section-about-us__title {
-        top: 1.5rem;
-        left: -2.7rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 15.5rem;/*248px*/
+      background-color: variables.$bg-peach;
     }
     .section-about-us__wrap-img {
-        @include mixin.wrap-img;
-        background-color: variables.$bg-peach;
-        }
+      background-color: transparent;
+    }
     .section-about-us__img {
-        @include mixin.img;
-        object-fit: contain;
-        top: 4.9rem;/*78px*/
-        left: 1.75rem;/*28px*/
+      width: 21.2rem;/*339px*/
+      height: 15.3125rem;/*245px*/
+      object-fit: cover;
+      top: -1.5rem;
+      left: auto;
     }
-    .section-about-us__wrap-right {
-        @include mixin.flex-col;
-        @include mixin.text-box;     
+    .section-about-us__wrap-right{
+      max-width: none;
     }
-
-    @media screen and (max-width: 1330px) {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        padding-right: 0;
-        gap: 2rem;
-        margin: 6.9rem 1.5rem 0 1.5rem;
-
-        .section-about-us__wrap-left {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            background-color: variables.$bg-peach;
-        }
-        .section-about-us__wrap-img {
-            background-color: transparent;
-        }
-        .section-about-us__img {
-            object-fit: cover;
-            top: -2em;
-            left: auto;
-        }
-        .section-about-us__wrap-right{
-        max-width: none;
-        }
-        .section-about-us__title {
-            display: none;
-        }
-        .section-promotion_btn {
-            display: none;
-        }
+    .section-about-us__title {
+      display: none;
     }
+    .section-promotion_btn {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    margin: 6.9rem 1.5rem 0 1.5rem;
+  }
 }

@@ -2,54 +2,73 @@
 @use "../abstracts/variables";
 
 .section-contacts {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  gap: 11rem;
+
+  .section-contacts__wrap-left{
+    width: 40.4rem; /*646px*/
+    height: 21.9rem; /*351px*/
+  } 
+  .section-contacts__wrap-map{
+    width: 100%; /*646px*/
+    height: 100%; /*351px*/
+  } 
+  .section-contacts__map{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 11rem;
+    height: 100%;
+    object-fit: cover;
+    border: 0;    
+  }
 
+  .section-contacts__wrap-right{
+    margin-top: variables.$fs-medium;
+    @include mixin.flex-col;
+    min-width: 202px;
+  } 
+  .section-contacts__inner{
+    @include mixin.flex-col;
+    max-width: 27.5rem;
+  }
+  .section-contacts__wrap-address {
+    @include mixin.flex-col; 
+  }
+  .section-contacts__img-btn {
+    width: 1.2rem;
+    height: 0.4rem;
+  } 
+  @media screen and (max-width:1310px){
+    gap: 2rem;
+  } 
+  @media screen and (max-width:920px){
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+    .section-contacts__wrap-left,  .section-contacts__wrap-right{
+      width: 100%; 
+    }
+    .section-contacts__wrap-right {
+      align-items: center;
+    }
+    .section-contacts__inner {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     .section-contacts__wrap-map{
-        width: 40.4rem; /*646px*/
-        height: 21.9rem; /*351px*/
-        border: 0;    
+      width: 100%; 
     } 
-    .section-contacts__map{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 0;    
+  }
+  @media screen and (max-width: 450px){
+    .section-contacts__wrap-address {
+      align-items: center;
     }
-
-    .section-contacts__wrap-right{
-        margin-top: variables.$fs-medium;
-        display: flex;
-        flex-direction: column;
-    }  
-    .section-contacts__img-btn {
-        width: 1.2rem;
-        height: 0.4rem;
-
-    }  
-    @media screen and (max-width:1307px){
-        width: 100%;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        .section-contacts__wrap-left {
-            width: 100%; 
-        }
-
-        .section-contacts__wrap-map{
-            width: 100%; 
-            border: 0;    
-        } 
-        .section-contacts__map{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 0;    
-        }
+    .section-contacts__wrap-address_hidden {
+      display: none;
     }
+  }
 } 
 
 

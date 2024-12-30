@@ -2,130 +2,138 @@
 @use "../abstracts/variables";
 
 .container {
-    @include mixin.flex-col;
-    max-width: none;
-    padding: 0;
-    
+  @include mixin.flex-col;
+  max-width: none;
+  padding: 0;
+  
+  .container__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.7rem;
+    height: 3.8rem;
+    font-family: "George Rounded", Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 5px;
+    background-color: variables.$bg-darkgreen;
+    cursor: pointer;
+  }
+  .container__button:hover {
+    background-color: rgb(55, 127, 121);
+  }
+  .container__button:hover > address > a{
+    font-weight: 700;
+  }
+  .container__button:active {
+    color: variables.$text-color; 
+    background-color: variables.$bg-green; 
+  }
+  .container__button_transparent {
+    display: none;
+    width: 11.8rem;
+    height: 3.3rem;
+    border: variables.$text-color 1px dashed;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
+  }
+  .container__button_transparent a{
+    font-family: "Josefin Sans", 'Times New Roman', Times, serif;
+    color: variables.$text-color;
+  }
+  .container__button_transparent:hover{
+    color: white;
+  }
+  .container__button_transparent:active{
+    color: black;
+  }
+  .container__button_small {
+    width: 8.4rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  .container__desc{
+    color: variables.$text-color;
+    font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: variables.$fs-small;
+    line-height: 2rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .container__title {
+    margin: 0;
+    font-family: "Josefin Sans", 'Times New Roman', Times, serif;
+    font-size: variables.$fs-xlarge;
+  }
+  .container__title-section {
+    margin: 0;
+    color: variables.$text-color;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: variables.$fs-medium;
+    text-align: left;
+  }
+  .container__title_h3 {
+    font-size: variables.$fs-large;
+  }
+  .container__title_h3-medium {
+    font-size: variables.$fs-medium;
+  }
+  .container__title_h3-smaller{
+    font-size: 2rem;
+    position: relative;
+  }
+  .container__title_h3-smaller::after{
+    content:"our address";
+    color:transparent;
+    border-top:2px solid #000;
+    width: 8rem;
+    position: absolute;
+    z-index: 2;
+    top: 1rem;
+    left: -9.5rem;
+  }
+  
+  .container__socials {
+    margin-left: 2.8rem;
+    align-self: flex-end;
+    display: grid;
+    grid-template-rows: repeat(3, 2rem) 7.5rem;
+    justify-content: end;
+    align-content: end;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+  .container__icon-socials {
+    width: 2rem;
+    height: 2rem;
+    fill: variables.$text-color; 
+  }
+  .container__icon-socials:hover{
+    fill: variables.$bg-darkgreen;
+  }
+  .container__icon-socials:active{
+    fill: variables.$bg-green; 
+  }
+  .container__wrap-text-socials {
+    position: relative;
+  }
+  .container__text-socials {
+    @include mixin.rotate;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    left:-2.7rem;
+    top: 2.8rem;
+    color: variables.$text-color;
+  }
 
-    .container__button {
-        width: 14.7rem;
-        height: 3.8rem;
-        font-family: "George Rounded", Georgia, 'Times New Roman', Times, serif;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        background-color: variables.$bg-darkgreen;
+  @media screen and (max-width:1310px){
+    .container__title_h3-smaller::after{
+      display: none;
     }
-    .container__button:hover {
-        background-color: rgb(55, 127, 121);
-    }
-    .container__button:active {
-        color: variables.$text-color; 
-        background-color: variables.$bg-green; 
-    }
+  }
+  @media screen and (max-width:450px){
     .container__button_transparent {
-        width: 11.8rem;
-        height: 3.3rem;
-        font-family: "Josefin Sans", 'Times New Roman', Times, serif;
-        border: variables.$text-color 1px dashed;
-        color: variables.$text-color;
-        background-color: transparent;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
+      display: flex;
     }
-    .container__button_transparent:hover{
-        color: white;
-    }
-    .container__button_transparent:active{
-        color: black;
-    }
-    .container__button_small {
-        width: 8.4rem;
-        height: 2.5rem;
-        border-radius: 7px;
-        box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.1);
-    }
-    .container__desc{
-        color: variables.$text-color;
-        font-family: "Alegreya Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: variables.$fs-small;
-        line-height: 2rem;
-        margin: 1rem 0 1rem 0;
-    }
-    .container__title {
-        margin: 0;
-        font-family: "Josefin Sans", 'Times New Roman', Times, serif;
-        font-size: variables.$fs-xlarge;
-    }
-    .container__title-section {
-        margin: 0;
-        color: variables.$text-color;
-        font-family: "Cedarville Cursive", cursive;
-        font-size: variables.$fs-medium;
-        text-align: left;
-    }
-    .container__title_h3 {
-        font-size: variables.$fs-large;
-    }
-    .container__title_h3-medium {
-        font-size: variables.$fs-medium;
-    }
-    .container__title_h3-smaller{
-        font-size: 2rem;
-        position: relative;
-    }
-    .container__title_h3-smaller::before{
-        content:"our address";
-        color:transparent;
-        border-top:2px solid #000;
-        width: 8rem;
-        position: absolute;
-        z-index: 2;
-        top: 1rem;
-        right: 15rem;
-    }
-    .container__title_rotate {
-        text-wrap: nowrap;
-        transform: rotate(-90deg);
-        transform-box: fill-box;
-        position: absolute;
-        z-index: 2;
-    }
-    .container__socials {
-        margin-left: 2.8rem;
-        align-self: flex-end;
-        display: grid;
-        grid-template-rows: repeat(3, 2rem) 7.5rem;
-        justify-content: end;
-        align-content: end;
-        gap: 1rem;
-        box-sizing: border-box;
-    }
-    .container__icon-socials {
-        width: 2rem;
-        height: 2rem;
-        fill: variables.$text-color; 
-    }
-    .container__icon-socials:hover{
-        fill: variables.$bg-darkgreen;
-    }
-    .container__icon-socials:active{
-        fill: variables.$bg-green; 
-    }
-    .container__wrap-text-socials {
-        position: relative;
-    }
-    .container__text-socials {
-        margin: 0;
-        position: absolute;
-        z-index: 2;
-        left:-2.7rem;
-        top: 2.8rem;
-        color: variables.$text-color;
-    }
-    
-    @media screen and (max-width:1307px){
-        .container__title_h3-smaller::before{
-            display: none;
-        }
-    }
+  }
 }

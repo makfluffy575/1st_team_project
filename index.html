@@ -9,7 +9,6 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href="./assets/style/style.map.css" />
     <title>Samwayle</title>
   </head>
   <body class="container">
@@ -42,10 +41,7 @@
             </li>
           </ul>
         </nav>
-        <div
-          class="container__button container__button_small"
-          id="header__link-phone"
-        >
+        <div class="container__button container__button_small">
           <address>
             <a
               class="header__nav-link header__nav-link_white"
@@ -57,17 +53,19 @@
       </div>
     </header>
     <!-- End KATE -->
-    <main class="main">
+    <main>
       <!-- Beginning MARIA -->
       <section class="section-home">
-        <div class="section-home__wrap-1">
+        <div class="section-home__wrap-left">
           <p class="container__title-section">
             Drink coffee, enjoy with Samwayle
           </p>
           <h1 class="container__title">Coffee shop</h1>
-          <button class="container__button">Order here</button>
+          <div class="container__button">
+            <a href="#">Order here</a>
+          </div>
         </div>
-        <div class="section-home__wrap-2">
+        <div class="section-home__wrap-right">
           <button class="section-home__btn">
             <img
               class="section-home__btn-img"
@@ -76,13 +74,11 @@
             />
           </button>
           <div class="section-home__wrap-img">
-            <div class="section-home__wrap-img_transparent">
-              <img
-                src="./assets/img/coffee_grinder.svg"
-                alt="coffee coffee_grinder"
-                class="section-home__img"
-              />
-            </div>
+            <img
+              src="./assets/img/coffee_grinder.svg"
+              alt="coffee coffee_grinder"
+              class="section-home__img"
+            />
           </div>
           <div class="container__socials">
             <a href="https://twitter.com/" target="_blank">
@@ -102,7 +98,7 @@
             </a>
             <div class="container__wrap-text-socials">
               <p
-                class="container__title container__title_h3-medium container__title_rotate container__text-socials"
+                class="container__title container__title_h3-medium container__text-socials"
               >
                 Follow us
               </p>
@@ -115,9 +111,7 @@
       <!-- Beginning NATALI -->
       <section class="section-about-us">
         <div class="section-about-us__wrap-left">
-          <h2
-            class="container__title-section container__title_rotate section-about-us__title"
-          >
+          <h2 class="container__title-section section-about-us__title">
             About us
           </h2>
           <div class="section-about-us__wrap-img">
@@ -154,7 +148,7 @@
           <h3 class="container__title container__title_h3">
             Coffee of the day
           </h3>
-          <p class="container__desc section-promotion_text">
+          <p class="container__desc">
             Americano coffee (Italian: Caffè Americano) is an espresso diluted
             with hot water. The presence of foam (cream) depends on how coffee
             and water are mixed. Attention! The concepts of “American” and
@@ -162,9 +156,9 @@
             refers not to diluted espresso, but to a drink prepared through a
             filter system.
           </p>
-          <button class="container__button section-promotion_btn">
-            Order now
-          </button>
+          <div class="container__button section-promotion__btn">
+            <a href="#">Order here</a>
+          </div>
         </div>
         <div class="section-promotion__wrap-right">
           <div class="section-promotion__wrap-img">
@@ -174,9 +168,7 @@
               alt="coffee take away"
             />
           </div>
-          <h2
-            class="container__title-section container__title_rotate section-promotion__title"
-          >
+          <h2 class="container__title-section section-promotion__title">
             Promotion
           </h2>
         </div>
@@ -204,7 +196,9 @@
                 least 3.2%. In addition to it, milk foam.
               </p>
             </div>
-            <button class="container__button">Order now</button>
+            <div class="container__button">
+              <a href="#">Order here</a>
+            </div>
           </div>
 
           <div class="section-menu__item">
@@ -216,7 +210,9 @@
                 least 3.2%. In addition to it, milk foam.
               </p>
             </div>
-            <button class="container__button">Order now</button>
+            <div class="container__button">
+              <a href="#">Order here</a>
+            </div>
           </div>
 
           <div class="section-menu__item">
@@ -230,7 +226,9 @@
                 beans at a pressure.
               </p>
             </div>
-            <button class="container__button">Order now</button>
+            <div class="container__button">
+              <a href="#">Order here</a>
+            </div>
           </div>
         </div>
         <button class="section-menu__button">
@@ -262,25 +260,28 @@
           <h3 class="container__title container__title_h3-smaller">
             Our address
           </h3>
-          <p class="container__desc">110 St-Cathedral Pkwy Station</p>
-          <p class="container__desc">4310 94th St, Flushing</p>
-          <p class="container__desc footer-address-1">
-            94-54 Corona Ave., Elmhurst
-          </p>
-          <p class="container__desc footer-address-2">
-            5627 Van Doren St, Queens
-          </p>
-          <button
-            class="container__button container__button_transparent"
-            id="footer__btn_address"
-          >
-            See more address
-            <img
-              class="section-contacts__btn-img"
-              src="./assets/icons/right_arrow.svg"
-              alt="right_arrow"
-            />
-          </button>
+          <div class="section-contacts__inner">
+            <div class="section-contacts__wrap-address">
+              <p class="container__desc">110 St-Cathedral Pkwy Station</p>
+              <p class="container__desc">4310 94th St, Flushing</p>
+            </div>
+            <div
+              class="section-contacts__wrap-address section-contacts__wrap-address_hidden"
+            >
+              <p class="container__desc">94-54 Corona Ave., Elmhurst</p>
+              <p class="container__desc">5627 Van Doren St, Queens</p>
+            </div>
+          </div>
+          <div class="container__button container__button_transparent">
+            <a href="#">
+              See more address
+              <img
+                class="section-contacts__btn-img"
+                src="./assets/icons/right_arrow.svg"
+                alt="right_arrow"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </footer>
