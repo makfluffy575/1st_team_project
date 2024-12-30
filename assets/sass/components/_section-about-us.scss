@@ -2,8 +2,13 @@
 @use "../abstracts/variables";
 
 .section-about-us {
-  @include mixin.layout;
-  @include mixin.layout-section; 
+  @include mixin.max-w;
+  
+  .section-about-us__box {
+    @include mixin.layout;
+    @include mixin.layout-section; 
+    margin-top: 12.375rem;
+  }
 
   .section-about-us__wrap-left {
     position: relative;
@@ -33,13 +38,14 @@
   }
 
   @media screen and (max-width: 1230px) {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    padding-right: 0;
-    gap: 2rem;
-
+    .section-about-us__box {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      padding-right: 0;
+      gap: 2rem;
+    }
     .section-about-us__wrap-left {
       display: flex;
       justify-content: center;
@@ -68,6 +74,8 @@
     }
   }
   @media screen and (max-width: 920px) {
-    margin: 6.9rem 1.5rem 0 1.5rem;
+    .section-about-us__box {
+      margin: 10rem 1.5rem 0 1.5rem;
+    }
   }
 }

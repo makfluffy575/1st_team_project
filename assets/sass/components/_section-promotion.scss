@@ -2,10 +2,13 @@
 @use "../abstracts/variables";
 
 .section-promotion {
-  @include mixin.layout;
-  @include mixin.layout-section; 
-  margin-top: 10.5rem;/*168px*/
+  @include mixin.max-w;
 
+  .section-promotion__box {
+    @include mixin.layout;
+    @include mixin.layout-section; 
+    margin-top: 10.5rem;/*168px*/
+  }
   .section-promotion__wrap-left {
     @include mixin.text-box;     
   }
@@ -30,13 +33,14 @@
   }
       
   @media screen and (max-width: 1230px) {
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    padding-right: 0;
-    gap: 2rem;
-
+    .section-promotion__box {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      padding-right: 0;
+      gap: 2rem;
+    }
     .section-promotion__wrap-right {
       display: flex;
       justify-content: center;
@@ -64,7 +68,9 @@
     }
   }
   @media screen and (max-width: 920px) {
-    margin: 6.9rem 1.5rem 0 1.5rem;
+    .section-promotion__box {
+      margin: 10rem 1.5rem 0 1.5rem;
+    }
   }  
 }
 

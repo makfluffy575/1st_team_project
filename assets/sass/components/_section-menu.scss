@@ -2,13 +2,17 @@
 @use "../abstracts/variables";
 
 .section-menu {
+
   margin-top: 4rem;
   width: 100%;
   box-sizing: border-box;
   background-color: variables.$bg-lightgreen;
-  display: flex;
-  padding: 3rem 7.5rem 3rem 7.5rem;
-
+  
+  .section-menu__box {
+    @include mixin.max-w;
+    display: flex;
+    padding: 3rem 7.5rem 3rem 7.5rem;
+  }
   .section-menu__wrap {
     margin: 0 2rem 0 2rem;
     display: grid;
@@ -35,6 +39,10 @@
     border: none;
     background-color: transparent;
     width: 4vw;
+
+  }
+  .section-menu__img-button {
+    width: 1rem;
   }
   .section-menu__img-btn:hover {
     width: 30%;
@@ -50,25 +58,28 @@
   }
   @media screen and (max-width: 1230px) {
     background-color: transparent;
-    justify-content: center;
-
+    .section-menu__box {
+      justify-content: center;
+    }
     .section-menu__wrap {
-        grid-template-columns: repeat(auto-fit, 36rem);
-        margin: 0;
+      grid-template-columns: repeat(auto-fit, 36rem);
+      margin: 0;
     }
     .section-menu__item:last-child {
       display: flex;
     }
     .section-menu__button {
-        display: none;
+      display: none;
     }
   }
   @media screen and (max-width: 920px) {
-    padding: 3rem 1.5rem 3rem 1.5rem;
+    .section-menu__box {
+      padding: 3rem 1.5rem 3rem 1.5rem;
+    }
   }
   @media screen and (max-width: 470px) {
     .section-menu__wrap {
-        grid-template-columns: repeat(auto-fit, minmax(20.5rem,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(20.5rem,1fr));
     }
   }
 }

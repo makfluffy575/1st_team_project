@@ -2,8 +2,7 @@
 @use "../abstracts/variables";
 
 .footer {
-	@include mixin.layout;
-	margin-top: 8.2rem;/*131px*/
+	@include mixin.max-w;
 	padding-bottom: 4rem;
 	display: flex;
 	justify-content: space-between;

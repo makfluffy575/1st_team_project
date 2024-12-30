@@ -1,11 +1,17 @@
 @use "../abstracts/mixin";
 @use "../abstracts/variables";
 .header {
-  @include mixin.layout;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 3rem;
+  @include mixin.max-w;
+  width: 100%;
+
+
+  .header__box {
+    @include mixin.layout;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .header__container {
     display: flex;
@@ -74,7 +80,9 @@
     }
   }
   @media screen and (max-width: 920px) {
-    margin: 3rem 1.5rem 0 1.5rem;
+    .header__box {
+      margin: 3rem 1.5rem 0 1.5rem;
+    }
   }
   @media screen and (max-width: 450px) {
     .container__button_small {

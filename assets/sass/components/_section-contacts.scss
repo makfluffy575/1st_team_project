@@ -2,6 +2,10 @@
 @use "../abstracts/variables";
 
 .section-contacts {
+  @include mixin.layout;
+	margin-top: 8.2rem;/*131px*/
+	
+
   width: 100%;
   display: flex;
   align-content: center;
@@ -42,18 +46,22 @@
     gap: 2rem;
   } 
   @media screen and (max-width:920px){
+    margin: 0;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
     
-    .section-contacts__wrap-left,  .section-contacts__wrap-right{
-      width: 100%; 
-    }
+    .section-contacts__wrap-right, .section-contacts__wrap-left {
+      width: 100%;
+    }  
     .section-contacts__wrap-right {
       align-items: center;
     }
     .section-contacts__inner {
+      max-width: none;
       width: 100%;
+
+      gap: 1rem;
       flex-direction: row;
       justify-content: space-around;
     }

@@ -4,7 +4,6 @@
 }
 
 @mixin layout-section {
-  margin-top: 6.9rem;/*110px*/
   padding-right: 5.6rem;/*90px*/
   display: flex;
   justify-content: space-between;
@@ -38,4 +37,9 @@
   transform-box: fill-box;
   position: absolute;
   z-index: 2;
+}
+
+@mixin max-w {
+  max-width: 90rem; /*1440px*/
+  margin: 0 auto;
 }
