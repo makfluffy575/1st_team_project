@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://makfluffy575.github.io/1st_team_project/"><img src="https://github.com/makfluffy575/1st_team_project/blob/main/assets/icons/logo.svg" alt="logo" height="40"/> <br/> Coffee shop</a></h1>
 <h2 align="center">About the Project</h2>
-<p>This is <a href="https://makfluffy575.github.io/1st_team_project/">a website project</a> for an NY coffee shop. The design and development of the website aim to make it convenient and user-friendly for visitors. The site is also adapted for mobile devices to enhance ease of use.</p>
+<p>This is <a href="https://makfluffy575.github.io/1st_team_project/">a website project</a> for a NY coffee shop. Design and development of the website aim to make it convenient and user-friendly for visitors. The site is also adapted for mobile devices to enhance ease of use.</p>
 <h2 align="center">Structure of the Project</h2>
 <p>The website consists of the following main parts and sections:</p>
 <ul> 
